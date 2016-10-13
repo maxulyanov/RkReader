@@ -1,0 +1,100 @@
+.container-cssload {
+    display: block;
+    width: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.cssload-loading {
+    width: 40px;
+    font-size: 0;
+}
+
+.cssload-loading i {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: #ed2537;
+    border-radius: 50%;
+    transform: scale(0.5);
+}
+
+.cssload-loading i:nth-child(1) {
+    animation: cssload-loading-ani1 1s ease-in-out infinite;
+
+}
+
+.cssload-loading i:nth-child(2) {
+    background: #1976D2;
+    animation: cssload-loading-ani1 1s ease-in-out 0.5s infinite;
+}
+
+@keyframes cssload-loading-ani1 {
+    50% {
+        transform: scale(1);
+    }
+}
+
+@-o-keyframes cssload-loading-ani1 {
+    70% {
+        -o-transform: scale(0.5);
+    }
+}
+
+@-ms-keyframes cssload-loading-ani1 {
+    70% {
+        -ms-transform: scale(0.5);
+    }
+}
+
+@-webkit-keyframes cssload-loading-ani1 {
+    70% {
+        -webkit-transform: scale(0.5);
+    }
+}
+
+@-moz-keyframes cssload-loading-ani1 {
+    70% {
+        -moz-transform: scale(0.5);
+    }
+}
+
+
+
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+    background: #d71928;
+
+    border-radius: 100%;
+    -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+    animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+    0% { -webkit-transform: scale(0) }
+    100% {
+        -webkit-transform: scale(1.0);
+        opacity: 0;
+    }
+}
+
+@keyframes sk-scaleout {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    } 100% {
+          -webkit-transform: scale(1.0);
+          transform: scale(1.0);
+          opacity: 0;
+      }
+}
