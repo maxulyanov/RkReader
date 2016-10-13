@@ -261,7 +261,6 @@ img {
 }
 .b-dropdown-list a:hover,
 .b-dropdown-list a.is-selected {
-  background: #FFF;
   color: #ed2537;
 }
 

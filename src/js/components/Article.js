@@ -127,7 +127,7 @@ export default class Article extends Component {
 
 
         return (
-            <a href="javascript:void(0);" target="_blank" className="b-article" onClick={this.handlerClick}>
+            <a href={article.url} target="_blank" className="b-article" onClick={this.handlerClick}>
                 <div className="article__photo">
                     <img ref="photo" src={article.image} />
                     <div className="b-shadow-static"></div>

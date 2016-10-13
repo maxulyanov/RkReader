@@ -21104,7 +21104,7 @@ var Article = function (_Component) {
 
             return _react2.default.createElement(
                 'a',
-                { href: 'javascript:void(0);', target: '_blank', className: 'b-article', onClick: this.handlerClick },
+                { href: article.url, target: '_blank', className: 'b-article', onClick: this.handlerClick },
                 _react2.default.createElement(
                     'div',
                     { className: 'article__photo' },
@@ -21885,7 +21885,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 /**
  * Created by PhpStorm.
  * Author: 1
- * Project: RKReader
+ * Project: RkReader
  * Date:  07.10.2016
  * Time: 23:14
  */
